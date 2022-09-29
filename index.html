@@ -12,33 +12,34 @@
 </head>
 
 <body>    
-    <div class="container">
+    <div class="container container-dark">
         <div class="menu">
-            <button class="modeButton">
-              <span class="material-icons md-dark">dark_mode</span>
+            <button class="modeButton button-dark">
+              <span class="material-icons md-dark hidden">dark_mode</span>
+              <span class="material-icons md-light">light_mode</span>
             </button>
         </div>
-        <div class="calc">
-            <div class="display display-enter" type="text" id="inputtext">0</div>
-            <button class="calc-button calc-clear" data-action="clear">C</button>
-            <button class="calc-button calc-delete" data-action="delete">Del</button>
-            <button class="calc-button calc-operation" data-action="modulo">%</button>
-            <button class="calc-button calc-operation" data-action="divide">/</button>
-            <button class="calc-button calc-num" id="7">7</button>
-            <button class="calc-button calc-num" id="8">8</button>
-            <button class="calc-button calc-num" id="9">9</button>
-            <button class="calc-button calc-operation" data-action="multiply">*</button>
-            <button class="calc-button calc-num" id="4">4</button>
-            <button class="calc-button calc-num" id="5">5</button>
-            <button class="calc-button calc-num" id="6">6</button>
-            <button class="calc-button calc-operation" data-action="subtract">-</button>
-            <button class="calc-button calc-num" id="1">1</button>
-            <button class="calc-button calc-num" id="2">2</button>
-            <button class="calc-button calc-num" id="3">3</button>
-            <button class="calc-button calc-operation" data-action="add">+</button>
-            <button class="calc-button calc-num" data-action="decimal">.</button>
-            <button class="calc-button calc-num" id="0">0</button>
-            <button class="calc-button calc-equals" data-action="calculate">=</button>
+        <div class="calc calc-dark">
+            <div class="display display-dark display-enter" type="text" id="inputtext">0</div>
+            <button class="button-dark calc-button calc-clear" data-action="clear">C</button>
+            <button class="button-dark calc-button calc-delete" data-action="delete">Del</button>
+            <button class="button-dark calc-button calc-operation" data-action="modulo">%</button>
+            <button class="button-dark calc-button calc-operation" data-action="divide">/</button>
+            <button class="button-dark calc-button calc-num" id="7">7</button>
+            <button class="button-dark calc-button calc-num" id="8">8</button>
+            <button class="button-dark calc-button calc-num" id="9">9</button>
+            <button class="button-dark calc-button calc-operation" data-action="multiply">*</button>
+            <button class="button-dark calc-button calc-num" id="4">4</button>
+            <button class="button-dark calc-button calc-num" id="5">5</button>
+            <button class="button-dark calc-button calc-num" id="6">6</button>
+            <button class="button-dark calc-button calc-operation" data-action="subtract">-</button>
+            <button class="button-dark calc-button calc-num" id="1">1</button>
+            <button class="button-dark calc-button calc-num" id="2">2</button>
+            <button class="button-dark calc-button calc-num" id="3">3</button>
+            <button class="button-dark calc-button calc-operation" data-action="add">+</button>
+            <button class="button-dark calc-button calc-num" data-action="decimal">.</button>
+            <button class="button-dark calc-button calc-num" id="0">0</button>
+            <button class="button-dark calc-button calc-equals" data-action="calculate">=</button>
         </div>
     </div>
 
@@ -47,6 +48,7 @@
 
 
     <script src="calculator.js"></script>
+    <script src="designmode.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 </body>
 

@@ -1,10 +1,11 @@
+/* -----------------------------General------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     font-family: sans-serif;
-    background-color: #ecf0f3;
 }
 
 .container{
@@ -12,12 +13,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ecf0f3;
 }
 
 .calc {
-    box-shadow: 6px 6px 13px #fff,
-    6px 6px 13px rgba(0, 0, 0, .16);
     border-radius: 28px;
     padding: 16px;
     display: grid;
@@ -28,12 +26,8 @@
     grid-column: span 4;
     height: 68px;
     width: 258px;
-    box-shadow: inset -6px -6px 13px #fff,
-    inset 6px 6px 13px rgba(0, 0, 0, .16);
-    background-color: #ecf0f3;
     border: none;
     border-radius: 32px;
-    color: rgba(0, 0, 0, 0.54);
     margin: 40px 0px 30px 0px;
     padding: 20px;
     font-size: 40px;
@@ -53,12 +47,7 @@
     text-overflow: ellipsis;
 }
 
-
-
 button{
-    box-shadow:  inset 6px 6px 13px #fff,
-     6px 6px 13px rgba(0, 0, 0, .16);
-    background-color: #ecf0f3;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -66,14 +55,6 @@ button{
     margin: 10px;
     font-size: 20px;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.54);
-}
-
-button:active {
-    background-color: rgb(122, 122, 122);
-    box-shadow:  inset 6px 6px 13px rgba(0, 0, 0, .16),
-    6px 6px 13px #fff;
-    color: #ecf0f3;
 }
 
 .modeButton{
@@ -81,14 +62,9 @@ button:active {
     margin-top: 20px;
 }
 
-button.modeButton:active{
-    background-color: #ecf0f3;
-}
-
 .calc-equals{
     width: 120px;
     border-radius: 42px;
-
 }
 
 .menu {
@@ -97,9 +73,87 @@ button.modeButton:active{
     right: 0;
 }
 
+/* ----------------------------Light Mode ----------------------------------------*/
+
+.container-light{
+    background-color: #ecf0f3;
+}
+
+.calc-light {
+    box-shadow: 6px 6px 13px #fff,
+    6px 6px 13px rgba(0, 0, 0, 0.284);
+}
+
+.display-light{
+    box-shadow: inset -6px -6px 13px #fff,
+    inset 6px 6px 13px rgba(0, 0, 0, .16);
+    background-color: #ecf0f3;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+button.button-light{
+    box-shadow:  inset 6px 6px 13px #fff,
+     6px 6px 13px rgba(0, 0, 0, .16);
+    background-color: #ecf0f3;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+button.button-light:active {
+    background-color: rgb(122, 122, 122);
+    box-shadow:  inset 6px 6px 13px rgba(0, 0, 0, .16),
+    6px 6px 13px #fff;
+    color: #ecf0f3;
+}
+
 .material-icons.md-dark { 
     color: rgba(0, 0, 0, 0.54); 
     background-color: #ecf0f3;
 }
 
+/* --------------------------------Dark Mode---------------------------------- */
+
+.container-dark{
+    background-color: #212121;
+}
+
+.calc-dark {
+    box-shadow: 6px 6px 13px #212121,
+    6px 6px 13px rgba(0, 0, 0, 0.415);
+    background-color: #303030;
+}
+
+.display-dark{
+    box-shadow: inset -6px -6px 13px #303030,
+    inset 6px 6px 13px rgba(0, 0, 0, 0.16);
+    background-color: #424242;
+    color: rgb(255, 255, 255, 1);
+}
+
+button.button-dark{
+    box-shadow:  inset 6px 6px 13px #303030,
+     6px 6px 13px rgba(0, 0, 0, .16);
+    background-color: #424242;
+    color: rgb(218, 218, 218);
+}
+
+button.button-dark:active {
+    background-color:rgb(218, 218, 218);
+    box-shadow:  inset 6px 6px 13px rgba(0, 0, 0, .16),
+    6px 6px 13px #000;
+    color: #303030;
+}
+
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1); 
+}
+
+.material-icons.md-light:active {
+    color:#303030;
+}
+
+/* -------------------------------Hide Object----------------------------- */
+
+span.hidden {
+    display: none;
+}
 

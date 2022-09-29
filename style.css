@@ -24,7 +24,7 @@
     grid-template-columns: repeat(4, 66px);
 }
 
-input{
+.display{
     grid-column: span 4;
     height: 68px;
     width: 258px;
@@ -34,11 +34,26 @@ input{
     border: none;
     border-radius: 32px;
     color: rgb(26, 25,25);
-    text-align: end;
     margin: 40px 0px 30px 0px;
     padding: 20px;
     font-size: 40px;
+    display: flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+.display-enter {
+    justify-content: flex-end;
+    text-overflow: ellipsis;
+}
+
+.display-result {
+    justify-content: flex-start;
+    text-overflow: ellipsis;
+}
+
+
 
 button{
     box-shadow:  inset 6px 6px 13px #fff,
@@ -52,7 +67,15 @@ button{
     font-size: 20px;
 }
 
-.equal{
+button:active {
+    background-color: rgb(122, 122, 122);
+    box-shadow:  inset 6px 6px 13px rgba(0, 0, 0, .16),
+    6px 6px 13px #fff;
+    color: #ecf0f3;
+}
+
+.calc-equals{
     width: 120px;
     border-radius: 42px;
+
 }

@@ -33,7 +33,7 @@
     background-color: #ecf0f3;
     border: none;
     border-radius: 32px;
-    color: rgb(58, 58, 58);
+    color: rgba(0, 0, 0, 0.54);
     margin: 40px 0px 30px 0px;
     padding: 20px;
     font-size: 40px;
@@ -65,6 +65,8 @@ button{
     height: 50px;
     margin: 10px;
     font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
 }
 
 button:active {
@@ -72,6 +74,15 @@ button:active {
     box-shadow:  inset 6px 6px 13px rgba(0, 0, 0, .16),
     6px 6px 13px #fff;
     color: #ecf0f3;
+}
+
+.modeButton{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+button.modeButton:active{
+    background-color: #ecf0f3;
 }
 
 .calc-equals{
@@ -85,3 +96,10 @@ button:active {
     top: 0;
     right: 0;
 }
+
+.material-icons.md-dark { 
+    color: rgba(0, 0, 0, 0.54); 
+    background-color: #ecf0f3;
+}
+
+
